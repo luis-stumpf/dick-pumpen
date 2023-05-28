@@ -1,0 +1,18 @@
+{
+  "trainings": [
+    {
+      "name": "test",
+      "exercise": [
+        {
+          "name": "test exercise",
+          "repAmount": 5,
+          "reps": [
+            {
+              "weight": 20
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
