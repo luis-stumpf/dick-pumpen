@@ -2,4 +2,6 @@
 	import Header from '$lib/components/header.svelte';
 </script>
 
-<h1>settings</h1>
+<div class="m-4">
+	<h1>settings</h1>
+</div>

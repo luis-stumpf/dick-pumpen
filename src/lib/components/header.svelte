@@ -3,11 +3,13 @@
 	import { AppBar } from '@skeletonlabs/skeleton';
 
 	$: getName = () => {
-		switch ($page.route.id?.split('/').at(-1)) {
+		let route = $page.route.id?.split('/');
+		switch (route?.at(1)) {
 			case '':
 				return 'Home';
-			case 'add':
-				return 'New plan';
+			case 'plan':
+				if (route[2] === 'add') return 'Add';
+				return 'Training';
 			case 'settings':
 				return 'Settings';
 			case 'profile':
